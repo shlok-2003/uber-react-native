@@ -16,7 +16,7 @@ const Rides = () => {
         data: recentRides,
         loading,
         error,
-    } = useFetch<Ride[]>(`/(api)/ride/${user?.id}`);
+    } = useFetch<Ride[]>(`/ride/${user?.id}`);
 
     if (error) {
         return (

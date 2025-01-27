@@ -32,7 +32,7 @@ export default function Home() {
         data: recentRides,
         loading,
         error,
-    } = useFetch<Ride[]>(`/(api)/ride/${user?.id}`);
+    } = useFetch<Ride[]>(`/ride/${user?.id}`);
 
     const [hasPermission, setHasPermission] = useState(true);
 

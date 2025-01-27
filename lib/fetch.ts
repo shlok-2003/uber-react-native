@@ -1,6 +1,8 @@
 export default async function fetchAPI(url: string, options?: RequestInit) {
     try {
-        const response = await fetch(url, {
+        const fullUrl = `${process.env.EXPO_PUBLIC_SERVER_URL}${url}`;
+        console.log(fullUrl);
+        const response = await fetch(`http://localhost:3000/api${url}`, {
             ...options,
             headers: {
                 "Content-Type": "application/json",

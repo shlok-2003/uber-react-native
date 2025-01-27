@@ -30,16 +30,11 @@
         },
         "web": {
             "bundler": "metro",
-            "output": "server",
+            "output": "static",
             "favicon": "./assets/images/icon.png"
         },
         "plugins": [
-            [
-                "expo-router",
-                {
-                    "origin": "https://uber.com"
-                }
-            ],
+            "expo-router",
             "expo-secure-store",
             [
                 "expo-location",
@@ -60,9 +55,6 @@
             "typedRoutes": true
         },
         "extra": {
-            "router": {
-                "origin": "https://uber.com"
-            },
             "eas": {
                 "projectId": "0f8d73f3-39ca-4deb-b4f2-7ca7f72fdf67"
             }
